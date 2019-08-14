@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="main.css">
+        <title>Игра "Угадай число"</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Игра "Угадай число"</h1>
+                <p>Загадано число в интервале от 1 до 100. У Вас есть 10 попыток, чтобы отгадать его. При неправильном вводе компьютер выдаст Вам подсказку, удачи!</p>
+
+                <div class="form">
+                    <label for="tryField">Введите число: </label>
+                    <input type="text" class="tryField" id="tryField">
+                    <input type="submit" class="trySubmit" value="Отгадать">
+                </div>
+                <div class="result">
+                    <p class="attempts"></p>
+                    <p class="lastResult"></p>
+                    <p class="tip"></p>
+                </div>
+            </div>
+            <footer>
+                <p>Viktorov Igor GitHub: <a href="https://github.com/ViktorovIO">https://github.com/ViktorovIO</a></p>
+            </footer>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
